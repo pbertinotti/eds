@@ -48,7 +48,7 @@
   src: local('Arial');
 }
 
-@media (width >= 900px) {
+@media (min-width: 900px) {
   :root {
     --heading-font-size-xxl: 60px;
     --heading-font-size-xl: 48px;
@@ -190,13 +190,13 @@ main .section {
   padding: 64px 16px;
 }
 
-@media (width >= 600px) {
+@media (max-width: 600px) {
   main .section {
     padding: 64px 32px;
   }
 }
 
-@media (width >= 900px) {
+@media (min-width: 900px) {
   .section > div {
     max-width: 1200px;
     margin: auto;
@@ -207,4 +207,11 @@ main .section {
 main .section.light,
 main .section.highlight {
   background-color: red;
+}
+
+@media (min-width: 900px) {
+  main .section.light,
+  main .section.highlight {
+    background-color: purple;
+  }
 }
